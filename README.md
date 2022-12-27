@@ -1,2 +1,3 @@
-# wordCounter-django
-word counter using django
+# Word Counter-django
+
+Word counter Website using python (Django)
