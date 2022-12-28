@@ -99,6 +99,13 @@ textarea:focus {
     margin: 1%;
 }
 
+.output.row.time div {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 1%;
+}
+
 .output.row span {
     font-weight: bold;
     font-size: 1.5rem;

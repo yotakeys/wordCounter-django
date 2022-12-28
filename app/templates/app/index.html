@@ -20,19 +20,19 @@
         <h1>Word Counter</h1>
         <form id="form" action="", method="POST">
             {% csrf_token %}
-            <textarea name="textInput" placeholder="Enter your text here..."></textarea>
+            <textarea name="textInput" placeholder="Enter your text here...">{{text}}</textarea>
             <input class="submitButton" type="submit" value="Count">
         </form>
         <div class="output row">
-            <div>Characters: <span id="characterCount">0</span></div>
-            <div>Words: <span id="wordCount">0</span></div>
+            <div>Characters: <span id="characterCount">{{char}}</span></div>
+            <div>Words: <span id="wordCount">{{word}}</span></div>
         </div>
         <div class="output row">
-            <div>Sentences: <span id="sentenceCount">0</span></div>
-            <div>Paragraphs: <span id="paragraphCount">0</span></div>
+            <div>Sentences: <span id="sentenceCount">{{sentence}}</span></div>
+            <div>Paragraphs: <span id="paragraphCount">{{paragraph}}</span></div>
         </div>
-        <div class="output row">
-            <div>Reading Time: <span id="readingTime">0</span></div>
+        <div class="output row time">
+            <div>Reading Time: <span id="readingTime">{{readingTimeMinute}} Minute {{readingTimeSecond}} Second</span></div>
         </div>
         <!-- <div class="keywords">
             Top keywords:
